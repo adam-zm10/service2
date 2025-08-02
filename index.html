@@ -19,7 +19,7 @@
           <li>Clean HTML/CSS</li>
           <li>1-day delivery</li>
         </ul>
-        <a class="btn" href="https://www.fiverr.com/tekdev1/create-a-professional-and-responsive-portfolio-website">Order Now</a>
+        <a href="#contact-form" class="btn" onclick="document.getElementById('selected-package').value='Premium'">Order Now</a>
       </div>
 
       <div class="offer-card">
@@ -31,7 +31,7 @@
           <li>HTML/CSS audit</li>
           <li>2-day delivery</li>
         </ul>
-        <a class="btn" href="https://www.fiverr.com/tekdev1/create-a-professional-and-responsive-portfolio-website">Order Now</a>
+        <a href="#contact-form" class="btn" onclick="document.getElementById('selected-package').value='Premium'">Order Now</a>
       </div>
 
       <div class="offer-card">
@@ -43,7 +43,7 @@
           <li>Advanced layout repair</li>
           <li>3-day delivery</li>
         </ul>
-        <a class="btn" href="https://www.fiverr.com/tekdev1/create-a-professional-and-responsive-portfolio-website">Order Now</a>
+         <a href="#contact-form" class="btn" onclick="document.getElementById('selected-package').value='Premium'">Order Now</a>
       </div>
     </div>
     <section class="gig-description">
@@ -64,6 +64,19 @@ I will professionally fix mobile responsiveness issues using clean HTML and CSS 
       </ul>
       
     </section>
+
+     <section id="contact-form" class="contact-form">
+    <h2>Order Your Package</h2>
+    <form action="https://formspree.io/f/mvgqboeb" method="POST">
+      <input type="hidden" name="package" id="selected-package" value="">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Phone Number (optional)">
+      <textarea name="message" placeholder="Any specific request?" rows="4"></textarea>
+      <button type="submit" class="btn">Send Order</button>
+    </form>
+  </section>
+
   </section>
 </body>
 </html>
